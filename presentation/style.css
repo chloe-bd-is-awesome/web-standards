@@ -1,20 +1,30 @@
 /* Basic page setup */
-
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: Helvetica, sans-serif;
+  color: rgb(255, 0, 204);
   margin: 1rem;
-  background:rgb(255, 0, 204)
-  font-size: 1rem;
+  height: fit-content;
+  background: url("https://27bslash6.com/images/Missy_poster_05.jpg");
+  font-size: 16px;
+}
+
+header{
+  font-family:monospace;
+  color: aqua;
+  height: fit-content;
+  margin: 0%;
+  background-color: rgb(255, 0, 204);
+  font-size: 36px;
 }
 
 a {
   font-family:'Courier New', Courier, monospace;
   margin: 0rem;
-  font-size: 144px;
+  font-size: 12px;
 }
 
 /* The pinboard grid */
@@ -27,33 +37,33 @@ a {
 }
 
 .pin {
-  border: 3px solid rgb(255, 0, 204);
+  background-color: aqua;
   cursor:crosshair;
   margin: 0;
 }
 
-.pin img {
+.pin figcaption {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: grid;
 }
 
-/* By default: show images, hide descriptions */
+/* By default: show descriptions, hide images */
 
-.pin figcaption {
+.pin img {
   display: none;
 }
 
 /* When the pin has the class "text-mode",
-   swap them: hide images, show descriptions */
+   swap them: hide description, show images */
 
 .pin.text-mode img {
-  display: none;
+  display: block;
+  object-fit: cover;
 }
 
 .pin.text-mode figcaption {
-  display: block;
+  display: none;
   background: rgb(255, 0, 204);
   padding: 1.5rem;
   height: 100%;
