@@ -1,0 +1,78 @@
+<figure class="pin">
+  <figcaption>
+    <i>
+      <a href="lost it.html">
+        <img src="images/bin1.png" alt="blue bin" />
+      </a>
+    </i>
+  </figcaption>
+</figure>
+
+<figure class="pin">
+  <figcaption>
+    <i>
+      <a href="found it.html">
+        <img src="images/bin2.png" alt="pink bin" />
+      </a>
+    </i>
+  </figcaption>
+</figure>
+
+<figure class="pin">
+  <figcaption>
+    <i>
+      <a href="archive.html">
+        <img src="images/bin4.png" alt="green bin" />
+      </a>
+    </i>
+  </figcaption>
+</figure>
+
+<figure class="pin">
+  <figcaption>
+    <i>
+      <a href="beanies in the cinema.html">
+        <img src="images/bin3.png" alt="green bin" />
+      </a>
+    </i>
+  </figcaption>
+</figure>
+
+/* The pinboard grid */
+
+.pinboard {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 5%;
+  margin-top: 0%;
+  margin-right: 2%;
+  margin-left: 0%;
+}
+.pin {
+  cursor: pointer;
+  margin: 0;
+}
+
+/* By default: show images, hide descriptions */
+
+.pin img {
+  width: 20vh;
+  height: 20vh;
+  /* display: grid; */
+}
+
+/* #bin1 {
+  display: block;
+}
+
+#bin1hover {
+  display: none;
+} */
+
+
+    <!-- <a -->
+    <!-- href="https://www.are.na/the-creative-independent-1522276020/sparrows-talking-about-the-future-of-the-web" -->
+    <!-- target="_blank" -->
+    <!-- >Shrek talking about the future of the web</a -->
+    <!-- >  -->
+
