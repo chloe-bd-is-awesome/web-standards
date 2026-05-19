@@ -10,17 +10,17 @@ pins.forEach((pin) => {
 
   // Keep pins away from the very edges (100px padding)
   const x = 100 + Math.random() * (boardW - 200);
-  const y = 40 + Math.random() * (boardH - 120);
-  // const rot = (Math.random() - 0.5) * 16; // -8deg to +8deg
+  const y = 40  + Math.random() * (boardH - 120);
+  const rot = (Math.random() - 0.5) * 16; // -8deg to +8deg
 
   pin.style.left = `${x}px`;
-  pin.style.top = `${y}px`;
-  // pin.style.transform = `rotate(${rot}deg)`;
+  pin.style.top  = `${y}px`;
+  pin.style.transform = `rotate(${rot}deg)`;
 
-  // // Individual click still toggles a single pin
-  // pin.addEventListener("click", () => {
-  //   pin.classList.toggle("text-mode");
-  // });
+  // Individual click still toggles a single pin
+  pin.addEventListener("click", () => {
+    pin.classList.toggle("text-mode");
+  });
 });
 
 // Toggle ALL pins between image and text mode
@@ -31,5 +31,5 @@ function toggleAll() {
   pins.forEach((pin) => {
     pin.classList.toggle("text-mode", allText);
   });
-  btn.textContentContent = allText ? "  " : " ";
+  btn.textContent = allText ? "Switch to Board" : "Switch to List";
 }

@@ -76,3 +76,66 @@
     <!-- >Shrek talking about the future of the web</a -->
     <!-- >  -->
 
+.bin-1 {
+  width: 30vw;
+  height: 30vh;
+}
+
+.bin-1-hover {
+  width: 30vw;
+  height: 30vh;
+}
+
+ <!-- Two toggle buttons -->
+    <div class="toggle-group">
+      <button onclick="setView('list')">☰</button>
+      <button onclick="setView('icon')">
+        <img src="images/toggle1.png" alt="toggle" width="5%" height="5%" />
+      </button>
+    </div>
+
+    <!-- The container that switches layout -->
+    <div class="grid icon-view" id="grid"></div>
+
+/* Icon view — multi-column grid */
+.grid.icon-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+/* List view — single column */
+.grid.list-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+/* Cards adjust their own layout based on parent class */
+.card.icon-view {
+  flex-direction: column;
+  align-items: center;
+}
+.card.list-view {
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+ /* position: absolute; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0; 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; */
+
+
+
+  /* position: absolute;
+  width: 150px;
+  height: 100px;
+  /* object-fit: cover; */

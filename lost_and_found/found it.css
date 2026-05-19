@@ -19,6 +19,31 @@ header {
   color: rgb(255, 179, 0);
 }
 
+/* Toggle all button */
+#toggle-all-btn {
+  background-image: url(images/toggle2.png);
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  border: 0cap;
+  width: 30px;
+  height: 20px;
+  margin-left: 12px;
+  /* font-sizh: 14px; */
+  padding: 0px;
+  /* border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white; */
+  cursor: pointer;
+  /* transition: background 0.2s; */
+}
+
+#toggle-all-btn:hover {
+  background-image: url(images/icon2.png);
+}
+
 img {
   margin-left: 3rem;
 }
@@ -26,5 +51,53 @@ img {
 a {
   margin: 0rem;
   font-size: 16px;
+  text-indent: 5px;
+  display: block; /* text-indent only works on block-level elements */
   color: rgb(255, 179, 0);
+}
+
+/* The pinboard grid */
+
+.pinboard {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* fixed height so abs-positioned children aren't clipped */
+  overflow: visible; /* don't clip pins near the edges */
+}
+
+.pin {
+  position: absolute; /* JS will set top/left/rotate */
+  cursor: pointer;
+  /* width: 100px;
+  height: 35px; */
+}
+
+.pin:hover {
+  z-index: 0;
+}
+
+.pin figcaption {
+  display: block;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+/* By default: show descriptions, hide images */
+
+.pin img {
+  display: none;
+}
+
+/* When the pin has the class "text-mode",
+   swap them: hide description, show images */
+
+.pin.text-mode figcaption {
+  display: none;
+}
+
+.pin.text-mode img {
+  width: 50px;
+  height: 35px;
+  display: block;
+  object-fit: fill;
 }
