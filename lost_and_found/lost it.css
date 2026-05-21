@@ -17,10 +17,37 @@ body {
 
 header {
   display: flex;
+  gap: 5px;
   height: fit-content;
-  margin-left: 5%;
+  margin-left: 2%;
   font-size: 24px;
   color: rgb(255, 255, 255);
+}
+
+/*
+Source - https://stackoverflow.com/a/36620107
+Posted by web-tiki, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-19, License - CC BY-SA 3.0
+*/
+
+div {
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  width: 20%;
+  height: 30vh;
+  animation: translate 20s infinite linear;
+}
+
+@keyframes upDown {
+  to {
+    transform: translatey(100px);
+  }
+}
+@keyframes translate {
+  to {
+    transform: translatex(900%);
+  }
 }
 
 /* Toggle all button */
