@@ -6,21 +6,15 @@ const pinboard = document.querySelector(".pinboard");
 
 pins.forEach((pin) => {
   const boardW = pinboard.offsetWidth || window.innerWidth;
-  const boardH = pinboard.offsetHeight || window.innerHeight * 0.8;
+  const boardH = window.innerHeight;
+  const pinH = pin.offsetHeight || 60;
+  const pinW = pin.offsetWidth || 100;
 
-  // Keep pins away from the very edges (100px padding)
-  const x = 100 + Math.random() * (boardW - 200);
-  const y = 40 + Math.random() * (boardH - 120);
-  // const rot = (Math.random() - 0.5) * 16; // -8deg to +8deg
+  const x = 100 + Math.random() * (boardW - pinW - 200);
+  const y = 40 + Math.random() * (boardH - pinH - 40);
 
   pin.style.left = `${x}px`;
   pin.style.top = `${y}px`;
-  // pin.style.transform = `rotate(${rot}deg)`;
-
-  // // Individual click still toggles a single pin
-  // pin.addEventListener("click", () => {
-  //   pin.classList.toggle("text-mode");
-  // });
 });
 
 // Toggle ALL pins between image and text mode

@@ -1,0 +1,67 @@
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(255, 0, 191);
+  margin: 0%;
+  letter-spacing: 3px;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 72px;
+}
+
+body {
+  background: linear-gradient(rgb(0, 247, 255), rgb(32, 0, 128));
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  margin: 1rem;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  width: 50vw;
+  display: block;
+}
+
+.paperclip img {
+  display: inline;
+  width: auto;
+  height: 36px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+a {
+  color: white;
+}
+
+/*
+ANIMATION PAPERCLIP*/
+
+.paperclip {
+  z-index: 10;
+  height: auto;
+  top: 85%;
+  width: 20vw;
+  animation: moveX 10s linear infinite;
+  position: fixed;
+  left: 0;
+  object-fit: cover;
+}
+
+@keyframes moveX {
+  to {
+    transform: translateX(550%);
+  }
+}
+
+.pin a {
+  display: block;
+  text-indent: 5px;
+}

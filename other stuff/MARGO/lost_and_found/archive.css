@@ -1,0 +1,30 @@
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  border-image: 5%;
+  height: fit-content;
+  font-size: 16px;
+}
+
+header {
+  height: fit-content;
+  margin-left: 5%;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  margin-left: 3rem;
+}
+
+a {
+  margin: 0rem;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}

@@ -9,19 +9,23 @@ body {
   min-width: 100%;
   min-height: 100vh;
   color: rgb(255, 255, 255);
-  margin: 10px;
-  border-image: 5%;
-  height: fit-content;
+  /* margin: 10px; */
+  /* border-image: 5%; */
   font-size: 16px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header {
   display: flex;
   gap: 5px;
   height: fit-content;
-  margin-left: 2%;
   font-size: 24px;
   color: rgb(255, 255, 255);
+}
+
+p {
+  margin: 0px;
 }
 
 /*
@@ -29,26 +33,6 @@ Source - https://stackoverflow.com/a/36620107
 Posted by web-tiki, modified by community. See post 'Timeline' for change history
 Retrieved 2026-05-19, License - CC BY-SA 3.0
 */
-
-div {
-  position: absolute;
-  left: 0;
-  object-fit: cover;
-  width: 20%;
-  height: 30vh;
-  animation: translate 20s infinite linear;
-}
-
-@keyframes upDown {
-  to {
-    transform: translatey(100px);
-  }
-}
-@keyframes translate {
-  to {
-    transform: translatex(900%);
-  }
-}
 
 /* Toggle all button */
 #toggle-all-btn {
@@ -58,49 +42,63 @@ div {
   background-repeat: no-repeat;
   object-fit: fill;
   border: 0cap;
-  width: 30px;
-  height: 20px;
+  width: 60px;
+  height: 40px;
   margin-left: 12px;
-  /* font-sizh: 14px; */
   padding: 0px;
-  /* border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  color: white; */
   cursor: pointer;
-  /* transition: background 0.2s; */
 }
 
 #toggle-all-btn:hover {
   background-image: url(images/icon.png);
 }
 
-img {
-  margin-left: 3rem;
-}
-
 a {
   margin: 0rem;
   font-size: 16px;
   text-indent: 5px;
-  display: block; /* text-indent only works on block-level elements */
+  /* display: block; text-indent only works on block-level elements */
   color: rgb(255, 255, 255);
+}
+
+/*
+ANIMATION PAPERCLIP*/
+
+.paperclip {
+  z-index: 10;
+  height: auto;
+  top: 5%;
+  width: 20vw;
+  animation: moveX 20s linear infinite;
+  position: fixed;
+  left: 0;
+  object-fit: cover;
+}
+
+@keyframes moveX {
+  to {
+    transform: translateX(900%);
+  }
 }
 
 /* The pinboard grid */
 
 .pinboard {
   position: relative;
-  width: 100%;
-  height: 80vh; /* fixed height so abs-positioned children aren't clipped */
-  overflow: visible; /* don't clip pins near the edges */
+  width: auto;
+  min-height: 100vh; /* grows with content /* fixed height so abs-positioned children aren't clipped /*  */
+  overflow: hidden; /*  don't clip pins near the edges  */
+}
+
+.pin a {
+  display: block;
+  text-indent: 5px;
 }
 
 .pin {
   position: absolute; /* JS will set top/left/rotate */
+  /* position: relative; */
   cursor: pointer;
-  /* width: 100px;
-  height: 35px; */
 }
 
 .pin:hover {
@@ -117,6 +115,7 @@ a {
 
 .pin img {
   display: none;
+  margin-left: 3rem;
 }
 
 /* When the pin has the class "text-mode",
@@ -128,7 +127,7 @@ a {
 
 .pin.text-mode img {
   width: 50px;
-  height: 35px;
+  height: auto;
   display: block;
   object-fit: fill;
 }

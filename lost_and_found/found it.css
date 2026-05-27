@@ -27,17 +27,11 @@ header {
   background-repeat: no-repeat;
   object-fit: fill;
   border: 0cap;
-  width: 30px;
-  height: 20px;
+  width: 60px;
+  height: 40px;
   margin-left: 12px;
-  /* font-sizh: 14px; */
   padding: 0px;
-  /* border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  color: white; */
   cursor: pointer;
-  /* transition: background 0.2s; */
 }
 
 #toggle-all-btn:hover {
@@ -104,6 +98,26 @@ a {
   text-indent: 5px;
   display: block; /* text-indent only works on block-level elements */
   color: rgb(255, 179, 0);
+}
+
+/*
+ANIMATION PAPERCLIP*/
+
+.paperclip {
+  z-index: 10;
+  height: auto;
+  top: 5%;
+  width: 20vw;
+  animation: moveX 20s linear infinite;
+  position: fixed;
+  left: 0;
+  object-fit: cover;
+}
+
+@keyframes moveX {
+  to {
+    transform: translateX(900%);
+  }
 }
 
 /* The pinboard grid */

@@ -14,9 +14,8 @@ h1 {
   font-family: "vendor", Helvetica, sans-serif;
   height: fit-content;
   margin: 0%;
-  color: rgb(71, 71, 71);
+  color: rgb(31, 31, 31);
   letter-spacing: 3px;
-  color: rgb(64, 64, 64);
   height: 110vh;
   text-align: center;
   vertical-align: text-bottom;
@@ -85,7 +84,7 @@ a {
   left: 0;
 
   width: 100%;
-  height: 110vh;
+  height: 130vh;
 
   overflow: hidden;
 
@@ -98,7 +97,7 @@ a {
 
 .fall {
   position: absolute;
-  top: -16vh;
+  top: -30vh;
   width: 8vw;
 
   animation-name: falling;
@@ -153,25 +152,25 @@ a {
 .item8 {
   left: 41%;
   animation-duration: 12s;
-  animation-delay: 7s;
+  animation-delay: 2s;
 }
 
 .item9 {
   left: 46%;
   animation-duration: 18s;
-  animation-delay: 2s;
+  animation-delay: -2s;
 }
 
 .item10 {
   left: 52%;
   animation-duration: 11s;
-  animation-delay: 8s;
+  animation-delay: -1.5s;
 }
 
 .item11 {
   left: 58%;
   animation-duration: 14s;
-  animation-delay: 1s;
+  animation-delay: -1s;
 }
 
 .item12 {
@@ -189,7 +188,7 @@ a {
 .item14 {
   left: 73%;
   animation-duration: 12s;
-  animation-delay: 6s;
+  animation-delay: -1s;
 }
 
 .item15 {
@@ -201,7 +200,7 @@ a {
 .item16 {
   left: 82%;
   animation-duration: 16s;
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 
 .item17 {
@@ -213,7 +212,7 @@ a {
 .item18 {
   left: 90%;
   animation-duration: 19s;
-  animation-delay: 1s;
+  animation-delay: -1s;
 }
 
 .item19 {
@@ -225,13 +224,13 @@ a {
 .item20 {
   left: 97%;
   animation-duration: 15s;
-  animation-delay: 8s;
+  animation-delay: 3s;
 }
 
 .item21 {
   left: 50%;
   animation-duration: 20s;
-  animation-delay: 10s;
+  animation-delay: -1s;
 }
 .item22 {
   left: 5%;
@@ -248,19 +247,19 @@ a {
 .item24 {
   left: 27%;
   animation-duration: 8s;
-  animation-delay: 2s;
+  animation-delay: -2s;
 }
 
 .item25 {
   left: 39%;
   animation-duration: 15s;
-  animation-delay: 5s;
+  animation-delay: -3s;
 }
 
 .item26 {
   left: 61%;
   animation-duration: 10s;
-  animation-delay: 3s;
+  animation-delay: -3s;
 }
 
 .item27 {
