@@ -1,0 +1,100 @@
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  gap: 5px;
+  height: fit-content;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+  text-decoration: white wavy underline;
+  margin: 0%;
+  text-align: left;
+  vertical-align: text-bottom;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(rgb(0, 247, 255), rgb(32, 0, 128));
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  margin: 1rem;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  width: 50vw;
+  display: block;
+}
+
+.pinboard {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 5vw;
+  width: 100vw;
+  height: fit-content;
+  margin: 0;
+}
+
+.pin {
+  display: block;
+  position: relative;
+  width: 250px; /* set your size */
+  height: auto;
+  margin: 0 auto;
+}
+
+.pin img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: auto;
+}
+
+.paperclip img {
+  display: inline;
+  width: auto;
+  height: 36px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+a {
+  color: white;
+}
+
+/*
+ANIMATION PAPERCLIP*/
+
+.paperclip {
+  z-index: 10;
+  height: auto;
+  top: 85%;
+  width: 20vw;
+  animation: moveX 10s linear infinite;
+  position: fixed;
+  left: 0;
+  object-fit: cover;
+}
+
+@keyframes moveX {
+  to {
+    transform: translateX(550%);
+  }
+}
+
+.pin a {
+  display: block;
+  text-indent: 5px;
+}

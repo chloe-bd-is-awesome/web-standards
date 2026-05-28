@@ -11,7 +11,7 @@ pins.forEach((pin) => {
   const pinW = pin.offsetWidth || 100;
 
   const x = 100 + Math.random() * (boardW - pinW - 200);
-  const y = 40 + Math.random() * (boardH - pinH - 40);
+  const y = 40 + Math.random() * (boardH - pinH - 200);
 
   pin.style.left = `${x}px`;
   pin.style.top = `${y}px`;
