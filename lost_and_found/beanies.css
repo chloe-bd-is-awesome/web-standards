@@ -236,13 +236,9 @@ ANIMATION PAPERCLIP*/
 }
 
 .ticket-main {
-
   flex: 1;
-
   padding: 1.5rem;
-
   color: #111;
-
   display: flex direction: row;
   flex-direction: ;
   justify-content: space-between;

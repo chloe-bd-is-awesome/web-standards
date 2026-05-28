@@ -8,13 +8,13 @@ header {
   gap: 5px;
   height: fit-content;
   font-size: 24px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 179, 0);
 }
 
 h1 {
   font-family: "Times New Roman", Times, serif;
-  color: rgb(255, 255, 255);
-  text-decoration: white wavy underline;
+  color: rgb(255, 179, 0);
+  text-decoration: rgb(255, 179, 0) wavy underline;
   margin: 0%;
   text-align: left;
   vertical-align: text-bottom;
@@ -118,7 +118,7 @@ img {
 }
 
 a {
-  color: white;
+  color: rgb(255, 179, 0);
   margin: 0px;
 }
 
